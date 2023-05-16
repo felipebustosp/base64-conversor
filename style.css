@@ -39,7 +39,7 @@
     border: 1px solid #ccc;
     font-size: 14px;
     line-height: 1.5;
-    resize: none;
+    resize: both;
     overflow: auto;
   }
   
