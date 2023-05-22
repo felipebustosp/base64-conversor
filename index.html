@@ -18,7 +18,7 @@
     <main>
         <p id="errors"></p>
         <div id="base64-input-container">
-            <textarea name="input-content" id="input-content-txt" cols="80" rows="1">Input</textarea>
+            <textarea name="input-content" id="input-content-txt" cols="80" rows="1" placeholder="Input"></textarea>
             <div class="options-container">
                 <input type="button" value="convert to json" id="convert-json-btn">
                 <input type="button" value="convert to base64" id="convert-base64-btn">
@@ -27,9 +27,13 @@
             </div>
         </div>
         <div id="output-container">
-            <textarea name="output-content" id="output-content-txt" cols="80" rows="10">JSON Output</textarea>
+            <textarea name="output-content" id="output-content-txt" cols="80" rows="10" placeholder="Output"></textarea>
             <input type="button" value="format JSON" id="format-output-json-btn">
             <input type="button" value="clear" id="clear-output-btn">
+        </div>
+
+        <div class="errors-container">
+            <p id="error_text"></p>
         </div>
     </main>
     <script src="index.js"></script>

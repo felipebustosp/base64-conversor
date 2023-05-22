@@ -9,7 +9,7 @@ const formatJsonInputBtn = document.getElementById('format-input-json-btn');
 const formatJsonOutputBtn = document.getElementById('format-output-json-btn');
 const clearInputBtn = document.getElementById('clear-input-btn');
 const clearOutputBtn = document.getElementById('clear-output-btn');
-
+const errorTxt = document.getElementById("error_text");
 
 // Añadir el evento click al botón de convertir
 convertJsonBtn.addEventListener('click', function() {
@@ -31,6 +31,7 @@ convertBase64Btn.addEventListener('click', function(){
         outputContentTxt.value = base64String;
     } catch(error){
         console.error('Invalid Json',error);
+        errorTxt.value = error;
         outputContentTxt.value = "Invalid JSON";
     }
 });
