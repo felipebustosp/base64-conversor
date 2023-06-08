@@ -10,7 +10,7 @@ const formatJsonOutputBtn = document.getElementById('format-output-json-btn');
 const clearInputBtn = document.getElementById('clear-input-btn');
 const clearOutputBtn = document.getElementById('clear-output-btn');
 const errorTxt = document.getElementById("error_text");
-
+const wrapJsonBtn = document.getElementById("wrap-json-btn");
 // Añadir el evento click al botón de convertir
 convertJsonBtn.addEventListener('click', function() {
     try{
@@ -61,6 +61,14 @@ formatJsonOutputBtn.addEventListener('click',function(){
         const errorTag = document.getElementById('errors');
         errorTag.value = "Cannot format JSON";
     }
+
+});
+
+wrapJsonBtn.addEventListener('click', function(){
+
+    const jsonString = JSON.parse(outputContentTxt.value);
+    let wrappedText = JSON.stringify(jsonString,null,null);
+    outputContentTxt.value = wrappedText;
 
 });
 

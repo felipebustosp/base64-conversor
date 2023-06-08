@@ -69,7 +69,9 @@
   #convert-json-btn,
   #convert-base64-btn,
   #format-input-json-btn,
-  #format-output-json-btn {
+  #format-output-json-btn,
+  #wrap-json-btn
+  {
     background-color: #007bff;
     color: #fff;
   }
@@ -79,7 +81,9 @@
   #convert-json-btn:hover,
   #convert-base64-btn:hover,
   #format-input-json-btn:hover,
-  #format-output-json-btn:hover {
+  #format-output-json-btn:hover,
+  #wrap-json-btn#hover
+  {
     background-color: #0056b3;
   }
   
