@@ -70,7 +70,8 @@
   #convert-base64-btn,
   #format-input-json-btn,
   #format-output-json-btn,
-  #wrap-json-btn
+  #wrap-json-btn,
+  #wrap-json-input-btn
   {
     background-color: #007bff;
     color: #fff;

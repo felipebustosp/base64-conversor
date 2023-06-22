@@ -11,6 +11,8 @@ const clearInputBtn = document.getElementById('clear-input-btn');
 const clearOutputBtn = document.getElementById('clear-output-btn');
 const errorTxt = document.getElementById("error_text");
 const wrapJsonBtn = document.getElementById("wrap-json-btn");
+const wrapJsonInputBtn = document.getElementById("wrap-json-input-btn");
+
 // Añadir el evento click al botón de convertir
 convertJsonBtn.addEventListener('click', function() {
     try{
@@ -69,6 +71,14 @@ wrapJsonBtn.addEventListener('click', function(){
     const jsonString = JSON.parse(outputContentTxt.value);
     let wrappedText = JSON.stringify(jsonString,null,null);
     outputContentTxt.value = wrappedText;
+
+});
+
+wrapJsonInputBtn.addEventListener('click', function(){
+
+    const jsonString = JSON.parse(jsonContentTxt.value);
+    let wrappedText = JSON.stringify(jsonString,null,null);
+    jsonContentTxt.value = wrappedText;
 
 });
 
